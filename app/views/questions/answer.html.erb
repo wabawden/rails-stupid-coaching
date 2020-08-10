@@ -1,0 +1,35 @@
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://y.yarn.co/9272db4b-1e4e-4bf5-b9a7-b2c7e6ec0ee2_screenshot.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-text">You:</h5>
+        <p class="card-title">
+        <%= params[:question] %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://thumbs.gfycat.com/SarcasticLeafyFirecrest-max-1mb.gif" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-text">Your Coach:</h5>
+        <p class="card-title">
+        <%= @answer %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Ask another question', '/ask' %>
